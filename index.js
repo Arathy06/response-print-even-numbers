@@ -17,6 +17,11 @@ app.listen(process.env.PORT || 3000,(error)=>{
     }
 })
 
+app.get("/",(req,res)=>{
+
+    res.send("To print even numbers")
+})
+
 app.get("/even",(req,res)=>{
 
     
