@@ -32,7 +32,7 @@ app.get("/even",(req,res)=>{
 
     {
 
-    res.send(i);
+    res.status(200).json(i);
     }
 }
 })
