@@ -24,15 +24,15 @@ app.get("/",(req,res)=>{
 
 app.get("/even",(req,res)=>{
 
-    
-
-    for(var i=1,n=100;i<=n;i++)
-{
+    var i=1,n=100;
+    while(i<=n)
+    {
     if(i%2==0)
 
     {
 
     res.status(200).json(i);
+    i++;
     }
 }
 })
